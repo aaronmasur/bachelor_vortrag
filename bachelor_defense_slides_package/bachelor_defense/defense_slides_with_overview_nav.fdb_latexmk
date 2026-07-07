@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1783433781 "c:/Users/Richm/Documents/Studium/6semester/bachelorvortrag/bachelor_vortrag/bachelor_defense_slides_package/bachelor_defense/defense_slides_with_overview_nav.tex" "defense_slides_with_overview_nav.pdf" "defense_slides_with_overview_nav" 1783433801 0
+["pdflatex"] 1783439703 "c:/Users/Richm/Documents/Studium/6semester/bachelorvortrag/bachelor_vortrag/bachelor_defense_slides_package/bachelor_defense/defense_slides_with_overview_nav.tex" "defense_slides_with_overview_nav.pdf" "defense_slides_with_overview_nav" 1783439724 0
   "C:/Users/Richm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1761724058 279473 a5adf91e689bec01ff50a3d6031c265c ""
   "C:/Users/Richm/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1761724071 24166315 7c89ac5e1ed04a565baf5332b8139a3f ""
   "S:/ProgrammierShit/MikTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -241,7 +241,7 @@
   "assets/rna_ensemble2.png" 1783356980 299786 a4310e883bc4bd15c05ede2d8e13bd9d ""
   "assets/rq1mcc.png" 1783432312 56037 062593c9849f307e9276d76be8e3fddb ""
   "assets/rq1results.png" 1783431346 622941 439e5193c798ca51bce1d285fb65a68d ""
-  "assets/rq1rnametrics.png" 1783431939 142514 e04bac1e6afe0ff90036a87ffedf8df4 ""
+  "assets/rq1rnametrics.png" 1783439644 114383 94228afaef8868d070b794a11a2874bd ""
   "assets/rq2_avg_structures.png" 1782933789 972822 141591c980ecdfe8ce8724afc19d13e3 ""
   "assets/rq2_bp_gc_tables.png" 1783432636 257408 5d3a2be4c51e9fd53c767bd986ff2742 ""
   "assets/rq2biascomparison.png" 1783432809 177298 9034dd5ebfa0cbbaec7f85bb10938bb2 ""
@@ -249,9 +249,9 @@
   "assets/thesisinpictures.png" 1783359671 30399717 acb818cd9932913ad007a47071cc83b3 ""
   "assets/university.png" 1773405674 42621 b26406fa2630733daf3b49d2cb221142 ""
   "c:/Users/Richm/Documents/Studium/6semester/bachelorvortrag/bachelor_vortrag/bachelor_defense_slides_package/bachelor_defense/defense_slides_with_overview_nav.tex" 1783433780 23529 9ba2c8e1572c61a5c912a701293858f6 ""
-  "defense_slides_with_overview_nav.aux" 1783433801 4925 4cad54d91cc981843fbc2e53c91ec2b9 "pdflatex"
-  "defense_slides_with_overview_nav.nav" 1783433801 2892 5b80b4d29935a05090c84edecc9d69d1 "pdflatex"
-  "defense_slides_with_overview_nav.out" 1783433782 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "defense_slides_with_overview_nav.aux" 1783439724 4925 4cad54d91cc981843fbc2e53c91ec2b9 "pdflatex"
+  "defense_slides_with_overview_nav.nav" 1783439724 2892 5b80b4d29935a05090c84edecc9d69d1 "pdflatex"
+  "defense_slides_with_overview_nav.out" 1783439705 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "defense_slides_with_overview_nav.tex" 1783433780 23529 9ba2c8e1572c61a5c912a701293858f6 ""
   (generated)
   "defense_slides_with_overview_nav.aux"

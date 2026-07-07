@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2025.10.29)  7 JUL 2026 16:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2025.10.29)  7 JUL 2026 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1285,11 +1285,11 @@ Underfull \hbox (badness 10000) detected at line 372
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-<assets/rq1rnametrics.png, id=232, 646.66594pt x 662.475pt>
+<assets/rq1rnametrics.png, id=232, 499.11469pt x 526.21594pt>
 File: assets/rq1rnametrics.png Graphic file (type png)
 <use assets/rq1rnametrics.png>
 Package pdftex.def Info: assets/rq1rnametrics.png  used on input line 372.
-(pdftex.def)             Requested size: 195.17548pt x 199.9472pt.
+(pdftex.def)             Requested size: 189.65031pt x 199.9472pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1440,7 +1440,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,14n,123p,564b,874s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on defense_slides_with_overview_nav.pdf (45 pages, 36570484 bytes).
+Output written on defense_slides_with_overview_nav.pdf (45 pages, 36544944 bytes).
 PDF statistics:
  367 PDF objects out of 1000 (max. 8388607)
  91 named destinations out of 1000 (max. 500000)
