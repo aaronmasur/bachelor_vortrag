@@ -13,7 +13,7 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamerfont{caption}{size=\scriptsize}
 
-\title[RNA ML Architecture Comparison]{\textbf{On the performance of machine learning architectures for RNA structure prediction}}
+\title[RNA ML Architecture Comparison]{\textbf{On the performance of machine learning architectures for RNA secondary structure prediction}}
 \subtitle{Bachelor thesis defense}
 \author{Aaron Masur}
 \date{July 13, 2026}
@@ -26,10 +26,10 @@
 % -----------------------------------------------------------------------------
 % Editable chapter navigation bar
 % Change these titles once you have your final structure.
-\newcommand{\chapterone}{Introduction to research questions}
-\newcommand{\chaptertwo}{RNA basics}
+\newcommand{\chapterone}{RNA basics}
+\newcommand{\chaptertwo}{Introduction to research questions}
 \newcommand{\chapterthree}{Machine Learning Architectures}
-\newcommand{\chapterfour}{Pipeline}
+\newcommand{\chapterfour}{Framework}
 \newcommand{\chapterfive}{Results}
 
 % Set the active chapter before a frame with: \setchapternav{3}
@@ -38,6 +38,15 @@
 \showchapterbarfalse
 \newcommand{\currentchapter}{0}
 \newcommand{\setchapternav}[1]{\renewcommand{\currentchapter}{#1}}
+
+\newcommand{\chaptertitleslide}[1]{%
+  \begin{frame}[plain]
+    \vfill
+    \centering
+    {\Huge\bfseries #1}
+    \vfill
+  \end{frame}%
+}
 
 \newcommand{\chaptersegment}[2]{%
   \ifnum\currentchapter=#1
@@ -69,6 +78,10 @@
   \end{tikzpicture}}
 \begin{frame}[plain]
   \titlepage
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south west,inner sep=0pt,xshift=0.55cm,yshift=0.45cm] at (current page.south west) {\includegraphics[width=0.20\paperwidth,keepaspectratio]{university.png}};
+    \node[anchor=south east,inner sep=0pt,xshift=-0.55cm,yshift=0.52cm] at (current page.south east) {\includegraphics[width=0.20\paperwidth,keepaspectratio]{SOSY-Logo.png}};
+  \end{tikzpicture}
 \end{frame}
 \setbeamertemplate{background canvas}{}
 }
@@ -102,9 +115,10 @@
 
 \showchapterbartrue
 \setchapternav{1}
+\chaptertitleslide{\chapterone}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{The question behind the thesis}
+\begin{frame}{What is RNA? What does it do?}
   warum gucke ich mir das überhaupt an.
   warum ist RNA interessant?
   warum ML?
@@ -112,12 +126,54 @@
 \end{frame}
 
 % -----------------------------------------------------------------------------
+\begin{frame}{Folding RNA: motifs}
+  \centering
+  \visible<1->{\textbf{form defines function}\par\vspace{0.75em}}
+  \visible<2->{\includegraphics[width=1\textwidth,height=0.73\textheight,keepaspectratio]{looptypes.png}}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{Folding RNA: representations}
+  \centering
+  \only<1>{\includegraphics[width=1\textwidth,height=0.73\textheight,keepaspectratio]{collage.png}}
+  \vfill
+  \only<2->{\begin{minipage}{0.49\textwidth}
+      \centering
+      \includegraphics[width=\linewidth,keepaspectratio]{bp_matrix_plot.png}\\[3pt]
+      \footnotesize BPM
+    \end{minipage}\hfill}
+  \only<3->{\begin{minipage}{0.49\textwidth}
+      \centering
+      \includegraphics[width=\linewidth,keepaspectratio]{mcc.png}\\[3pt]
+      \footnotesize Confusion Matrix
+    \end{minipage}}
+  \vfill
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{RNA secondary structure prediction: two philosophies}
+  \vfill
+  \begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,keepaspectratio]{real_feynman_from_lecture.png}\\[3pt]
+    \footnotesize Dynamic Programming: Zuker algorithm
+  \end{minipage}\hfill
+  \begin{minipage}{0.49\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,keepaspectratio]{cnn_implmemetnaion_visualization.png}\\[3pt]
+    \footnotesize Machine Learning
+  \end{minipage}
+  \vfill
+\end{frame}
+% -----------------------------------------------------------------------------
+\setchapternav{2}
+\chaptertitleslide{\chaptertwo}
 \begin{frame}{Two research questions}
   \vfill
   \begin{enumerate}
-    \item<1-> \textbf{How much data is necessary} for FFN, CNN, and BLSTM models to perform sufficiently well?
+    \item<1-> \textit{\textbf{How much data} is necessary for various machine learning architectures to perform sufficiently well?}
           \vspace{1em}
-    \item<2-> \textbf{How do these architectures behave on biased datasets} such as base-pair span, GC content, helix length, and multiloops?
+    \item<2-> \textit{How do machine learning architectures perform on distinct \textbf{biased data sets}?}
   \end{enumerate}
   \vfill
   \only<3->{\takehome{Not just ``which model wins'', but what each architecture learns.}}
@@ -125,42 +181,51 @@
 \end{frame}
 
 % -----------------------------------------------------------------------------
-\setchapternav{2}
-\begin{frame}{What is RNA?}
-\end{frame}
-
-% -----------------------------------------------------------------------------
 \setchapternav{3}
+\chaptertitleslide{\chapterthree}
 \begin{frame}{The three modeling principles}
-\end{frame}
+  \vfill
+  \begin{center}
+    \begin{tabularx}{0.98\textwidth}{@{}>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}X@{}}
+      \temporal<2>{\colorbox{black!3}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Fully connected       \\feature integration}}}{\colorbox{blue!13}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Fully connected\\feature integration}}}{\colorbox{black!3}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Fully connected\\feature integration}}}
+       &
+      \temporal<3>{\colorbox{black!3}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Local pattern         \\extraction}}}{\colorbox{blue!13}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Local pattern\\extraction}}}{\colorbox{black!3}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Local pattern\\extraction}}}
+       &
+      \temporal<4>{\colorbox{black!3}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Sequential dependency \\modelling}}}{\colorbox{blue!13}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Sequential dependency\\modelling}}}{\colorbox{black!3}{\parbox[c][1.25cm][c]{0.31\textwidth}{\centering\large\bfseries Sequential dependency\\modelling}}}
+    \end{tabularx}
+  \end{center}
 
-% -----------------------------------------------------------------------------
-\begin{frame}{FFN: fully connected, but no structural prior}
-\end{frame}
-
-% -----------------------------------------------------------------------------
-\begin{frame}{CNN: local kernels on sequence and pairwise space}
-\end{frame}
-
-% -----------------------------------------------------------------------------
-\begin{frame}{BLSTM: sequence context in both directions}
+  \vspace{1.1em}
+  \begin{overlayarea}{\textwidth}{0.50\textheight}
+    \centering
+    \only<2>{
+      \includegraphics[width=0.78\textwidth,height=0.34\textheight,keepaspectratio]{ffn_impl.png}\\[0.45em]
+      \small Fully connected layers recombine all input features. No structural context.
+    }
+    \only<3>{
+      \includegraphics[width=0.78\textwidth,height=0.34\textheight,keepaspectratio]{cnn_implmemetnaion_visualization.png}\\[0.45em]
+      \small Kernels learn short local motifs and hierarchically build higher levels of representations.
+    }
+    \only<4>{
+      \includegraphics[width=0.58\textwidth,height=0.34\textheight,keepaspectratio]{lstm_cell.png}\\[0.45em]
+      \small Two LSTMs pass information along the sequence in both directions to model dependency structure.
+    }
+  \end{overlayarea}
+  \vfill
 \end{frame}
 
 % -----------------------------------------------------------------------------
 \setchapternav{4}
-\begin{frame}{Design constraints I chose deliberately}
-\end{frame}
-
-% -----------------------------------------------------------------------------
-\begin{frame}{Pipeline: from data to evaluation}
+\chaptertitleslide{\chapterfour}
+\begin{frame}{A pipeline from data to evaluation}
   \centering
-  \vspace{0.7em}
-  \begin{tikzpicture}[node distance=1.3cm, >=stealth, thick]
-    \tikzstyle{box}=[draw=black!65, fill=blue!5, rounded corners=4pt, minimum width=2.1cm, minimum height=0.9cm, align=center]
+  \vspace{0.25em}
+  \begin{tikzpicture}[node distance=1.0cm, >=stealth, thick]
+    \tikzstyle{box}=[draw=black!65, fill=blue!5, rounded corners=4pt, minimum width=1.75cm, minimum height=0.9cm, align=center]
     \node[box] (d) {data\\generation};
-    \node[box, right of=d, xshift=1.9cm] (o) {model\\optimization};
-    \node[box, right of=o, xshift=1.9cm] (t) {training};
-    \node[box, right of=t, xshift=1.9cm] (e) {evaluation};
+    \node[box, right of=d, xshift=1.5cm] (o) {model\\optimization};
+    \node[box, right of=o, xshift=1.5cm] (t) {training};
+    \node[box, right of=t, xshift=1.25cm] (e) {evaluation};
     \draw[->] (d) -- (o);
     \draw[->] (o) -- (t);
     \draw[->] (t) -- (e);
@@ -170,42 +235,95 @@
     \only<3>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]t.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]t.north east);}
     \only<4>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]e.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]e.north east);}
   \end{tikzpicture}
-  \vfill
-  \begin{overlayarea}{0.85\textwidth}{4.2cm}
+  \vspace{0.30em}
+  \begin{overlayarea}{0.92\textwidth}{5.15cm}
     \only<1>{
-      \begin{minipage}{0.85\textwidth}
+      \begin{minipage}{0.92\textwidth}
         \centering
-        \large\textbf{Data generation}
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{datagenconfig.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{dataexample.png}
+        \end{minipage}
 
         \vspace{0.35em}
-        Synthetic RNA sequences are sampled, then labeled with RNAfold-derived secondary structures.
+        \begin{itemize}
+          \item sample synthetic RNA sequences
+          \item label with RNAfold-derived secondary structures
+        \end{itemize}
       \end{minipage}
     }
     \only<2>{
-      \begin{minipage}{0.85\textwidth}
+      \begin{minipage}{0.92\textwidth}
         \centering
-        \large\textbf{Model optimization}
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{ffnhyperparamspace.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{optimizationresults.png}
+        \end{minipage}
 
         \vspace{0.35em}
-        Search the architecture-specific and training hyperparameters so each model gets its best setup.
+        Search hyperparameter space, to:
+        \begin{enumerate}
+          \item give each architecture its preferred non-architectural parameters
+          \item obtain comparable representatives of the architectures
+        \end{enumerate}
       \end{minipage}
     }
     \only<3>{
-      \begin{minipage}{0.85\textwidth}
+      \begin{minipage}{0.92\textwidth}
         \centering
-        \large\textbf{Training}
-
-        \vspace{0.35em}
-        Train with BCEWithLogitsLoss and Adam, and stop early based on validation MCC.
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \textbf{Loss function}
+          \begin{enumerate}
+            \item independant predictions for each position
+            \item class imbalance
+          \end{enumerate}
+          $\Rightarrow$ BCEwithlogitsloss
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \textbf{Optimizer}
+          \begin{enumerate}
+            \item deal sharp gradient spikes (due to FN and high \texttt{wpc})
+            \item no weight decay
+          \end{enumerate}
+          $\Rightarrow$ Adam
+        \end{minipage}
       \end{minipage}
+      \vspace{1.5em}
+      \begin{itemize}
+        \item Final Result: Training run + \textbf{Model parameters}
+        \item Training loop metrics calculated through binarized prediction matrix
+        \item Threshold was independently optimized by each model
+      \end{itemize}
     }
     \only<4>{
-      \begin{minipage}{0.85\textwidth}
+      \begin{minipage}{0.92\textwidth}
         \centering
-        \large\textbf{Evaluation}
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          %\includegraphics[width=\linewidth,height=1.45cm,keepaspectratio]{rq1_bpm_table.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          %\includegraphics[width=\linewidth,height=1.45cm,keepaspectratio]{rq2_bp_gc_tables.png}
+        \end{minipage}
 
         \vspace{0.35em}
-        Test on an independent sequence set and report MCC together with RNA-specific metrics.
+        \begin{itemize}
+          \item Test on an independent validation dataset
+          \item report MCC
+          \item report RNA-specific metrics: symmetry, sparsity, non-canonical ratio, min loop
+                length
+        \end{itemize}
       \end{minipage}
     }
   \end{overlayarea}
@@ -215,59 +333,39 @@
 
 % -----------------------------------------------------------------------------
 \setchapternav{5}
-\begin{frame}{RQ1 setup: how much data is enough?}
+\chaptertitleslide{\chapterfive}
+\begin{frame}{RQ1: MCC and generalization gap}
   \vfill
-  \begin{center}
-    \renewcommand{\arraystretch}{1.28}
-    \begin{tabular}{c|c|c|c|c|c}
-      \textbf{train size} & 200  & 1,000 & 5,000    & 10,000 & 50,000  \\
-      \hline
-      \textbf{idea}       & tiny & small & moderate & large  & scaling
-    \end{tabular}
-  \end{center}
-  \vspace{1em}
-  \large
-  Each optimized architecture is trained on each size and evaluated on an independent 10,000-sequence test set.\\[0.6em]
-  Primary score: \textbf{MCC}. Additional RNA metrics: symmetry, sparsity, non-canonical ratio, minimum loop length.
-  \note{Mention that MCC is useful because base-pair matrices are very imbalanced: almost all cells are zeros. Accuracy would be misleading. The extra RNA metrics explain what the model learned structurally, not just whether the MCC went up.}
-\end{frame}
-
-% -----------------------------------------------------------------------------
-\begin{frame}{RQ1 result: MCC scaling}
   \centering
-  \renewcommand{\arraystretch}{1.25}
-  \begin{tabular}{c|ccccc}
-    \textbf{Model} & \textbf{200} & \textbf{1,000} & \textbf{5,000} & \textbf{10,000} & \textbf{50,000} \\
-    \hline
-    FFN            & 0.0104       & 0.0184         & 0.0257         & 0.0272          & 0.0280          \\
-    CNN            & 0.2711       & 0.3165         & 0.3997         & 0.3976          & 0.4260          \\
-    BLSTM          & 0.0000       & 0.0000         & 0.2924         & 0.3043          & 0.3359          \\
-  \end{tabular}
+  \includegraphics[height=0.5\textwidth,keepaspectratio]{rq1mcc.png}\\[3pt]
   \vfill
   \only<2->{\takehome{CNN works early; BLSTM needs roughly 5,000; FFN stays near zero.}}
-  \note{This is one of the central slides. Say: FFN is basically not solving the task. CNN already gets a meaningful MCC at 200 and improves with data. BLSTM is flat at zero for 200 and 1000 because predictions are below its optimized threshold; after 5000 it starts producing meaningful structures.}
 \end{frame}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{RQ1 visual result: what the models predict}
+
+\begin{frame}{RQ1: Prediction visualizations}
+  \vfill
   \centering
-  \includegraphics[width=0.82\textwidth,height=0.73\textheight,keepaspectratio]{rq1_bpm_table.png}
+  \includegraphics[height=0.78\textheight,keepaspectratio]{rq1results.png}\\[3pt]
+  \vfill
   \note{Use the picture more than the numbers. FFN forms a broad average-looking pattern with many false positives, rather than sequence-specific folding. CNN predictions are sparse and already close to real base-pair diagonals. BLSTM with little data is too diffuse or below threshold, then begins to show structure from 5000 onward.}
 \end{frame}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{RQ1 RNA metrics: low vs. high data}
+\begin{frame}{RQ1: FFN learns average structure}
   \vfill
-  \begin{minipage}{0.49\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,keepaspectratio]{rq1_metrics_200.png}\\[3pt]
-    \footnotesize train size 200
-  \end{minipage}\hfill
-  \begin{minipage}{0.49\textwidth}
-    \centering
-    \includegraphics[width=\linewidth,keepaspectratio]{rq1_metrics_50000.png}\\[3pt]
-    \footnotesize train size 50,000
-  \end{minipage}
+  \centering
+  \includegraphics[height=0.78\textheight,keepaspectratio]{avgpicture.png}\\[3pt]
+  \vfill
+  \note{Use the picture more than the numbers. FFN forms a broad average-looking pattern with many false positives, rather than sequence-specific folding. CNN predictions are sparse and already close to real base-pair diagonals. BLSTM with little data is too diffuse or below threshold, then begins to show structure from 5000 onward.}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}{RQ1: RNA metrics over thresholds}
+  \vfill
+  \centering
+  \includegraphics[height=0.78\textheight,keepaspectratio]{rq1rnametrics.png}\\[3pt]
   \vfill
   \note{The exact curves are not something the audience must memorize. Main story: CNN learns RNA constraints surprisingly early, but overfits. BLSTM becomes useful only with more data and still does not learn minimum loop length. FFN's curves reflect a learned average matrix rather than RNA-specific folding.}
 \end{frame}
@@ -276,12 +374,12 @@
 \begin{frame}{RQ1 interpretation by architecture}
   \vfill
   \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
-    FFN   & learned an average base-pair distribution, not a sequence-specific folding rule                   \\[0.9em]
-    CNN   & strong with little data, good local constraints, but clear overfitting                            \\[0.9em]
-    BLSTM & no useful thresholded predictions for 200/1,000; starts around 5,000; weak on minimum loop length \\
+    FFN   & learned an average base-pair distribution, not a sequence-specific folding rule                                                                   \\[0.9em]
+    CNN   & strong with little data, good local constraints, but clear overfitting                                                                            \\[0.9em]
+    BLSTM & no useful predictions for 200/1,000; starts around 5,000; weak on minimum loop length; strong performance regarding 10x fewer parameters than CNN \\
   \end{tabularx}
   \vfill
-  \takehome{Architecture bias explains a lot of the behavior.}
+  \takehome{Modelling principle explains a lot of the behavior.}
   \note{This slide maps observations to the architectural hypotheses: FFN has no locality or sequence prior. CNN has local kernels, so it is strong on local motifs and constraints. BLSTM has sequence context and lower parameter count, so it generalizes differently, but it is not naturally forced to respect local matrix constraints.}
 \end{frame}
 
@@ -314,8 +412,13 @@
 % -----------------------------------------------------------------------------
 \begin{frame}{RQ2: helix length and multiloops}
   \centering
-  \includegraphics[width=0.86\textwidth,height=0.76\textheight,keepaspectratio]{rq2_hl_multi_tables.png}
+  \includegraphics[width=0.86\textwidth,height=0.76\textheight,keepaspectratio]{rq2hlandml.png}
   \note{Helix length is where the CNN sensitivity is most visible. The hypothesis is that kernels learn local helix motifs; if the helix-length distribution shifts, those patterns transfer less well. Multiloop shifts look less dramatic in MCC. Important caveat: MCC compares base-pair matrix cells and may not be a good metric for higher-order topology such as multiloop branch structure.}
+\end{frame}
+% -----------------------------------------------------------------------------
+\begin{frame}{RQ2: bias sensitivities}
+  \centering
+  \includegraphics[width=0.86\textwidth,height=0.76\textheight,keepaspectratio]{rq2biascomparison.png}
 \end{frame}
 
 % -----------------------------------------------------------------------------
@@ -323,8 +426,8 @@
   \vfill
   \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
     FFN        & mostly follows the average picture of train vs. evaluation set           \\[0.9em]
-    BLSTM      & more sensitive to base-pair span and GC-content shifts                   \\[0.9em]
     CNN        & more sensitive to helix-length bias, likely due to kernel-learned motifs \\[0.9em]
+    BLSTM      & more sensitive to base-pair span and GC-content shifts                   \\[0.9em]
     Multiloops & differences are moderate; MCC may hide topology errors                   \\
   \end{tabularx}
   \vfill
@@ -332,6 +435,7 @@
 \end{frame}
 
 % -----------------------------------------------------------------------------
+\showchapterbarfalse
 \begin{frame}{Overall take-home}
   \vfill
   \Large
@@ -386,5 +490,11 @@
   \end{center}
   \note{End relaxed. If asked about limitations, answer honestly: synthetic labels, fixed length, no regularization, limited architectures, and MCC limitations. Then explain why each was chosen.}
 \end{frame}
+% -----------------------------------------------------------------------------
+\begin{frame}{Repo visualization}
+  \centering
+  \includegraphics[width=0.82\textwidth,height=0.73\textheight,keepaspectratio]{diagram.png}
+\end{frame}
 
+% -----------------------------------------------------------------------------
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2025.10.29)  6 JUL 2026 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2025.10.29)  7 JUL 2026 16:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,24 +709,24 @@ File: l3backend-pdftex.def 2023-10-10 L3 backend support: PDF output (pdfTeX)
 ) (defense_slides_with_overview_nav.aux)
 \openout1 = `defense_slides_with_overview_nav.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -781,7 +781,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (S:\ProgrammierShit\MikTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 64.
+Package hyperref Info: Link coloring OFF on input line 73.
  (defense_slides_with_overview_nav.out) (defense_slides_with_overview_nav.out)
 \@outlinefile=\write5
 \openout5 = `defense_slides_with_overview_nav.out'.
@@ -799,78 +799,83 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (S:\ProgrammierShit\MikTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (defense_slides_with_overview_nav.nav)
-<assets/rna_ensemble2.png, id=12, 1185.67969pt x 575.90157pt>
+<assets/university.png, id=12, 338.26375pt x 142.03062pt>
+File: assets/university.png Graphic file (type png)
+<use assets/university.png>
+Package pdftex.def Info: assets/university.png  used on input line 85.
+(pdftex.def)             Requested size: 72.83795pt x 30.58366pt.
+<assets/SOSY-Logo.png, id=14, 1604.99625pt x 614.295pt>
+File: assets/SOSY-Logo.png Graphic file (type png)
+<use assets/SOSY-Logo.png>
+Package pdftex.def Info: assets/SOSY-Logo.png  used on input line 85.
+(pdftex.def)             Requested size: 72.83795pt x 27.8764pt.
+<assets/rna_ensemble2.png, id=15, 1185.67969pt x 575.90157pt>
 File: assets/rna_ensemble2.png Graphic file (type png)
 <use assets/rna_ensemble2.png>
-Package pdftex.def Info: assets/rna_ensemble2.png  used on input line 72.
+Package pdftex.def Info: assets/rna_ensemble2.png  used on input line 85.
 (pdftex.def)             Requested size: 364.1918pt x 176.89316pt.
  [1
 
-{C:/Users/Richm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./assets/rna_ensemble2.png>]
-<assets/thesisinpictures.png, id=23, 13279.6125pt x 7468.90375pt>
+{C:/Users/Richm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./assets/rna_ensemble2.png> <./assets/university.png> <./assets/SOSY-Logo.png>]
+<assets/thesisinpictures.png, id=26, 13279.6125pt x 7468.90375pt>
 File: assets/thesisinpictures.png Graphic file (type png)
 <use assets/thesisinpictures.png>
-Package pdftex.def Info: assets/thesisinpictures.png  used on input line 81.
+Package pdftex.def Info: assets/thesisinpictures.png  used on input line 94.
 (pdftex.def)             Requested size: 364.12666pt x 204.79716pt.
  [2
 
  <./assets/thesisinpictures.png>]
 File: assets/thesisinpictures.png Graphic file (type png)
 <use assets/thesisinpictures.png>
-Package pdftex.def Info: assets/thesisinpictures.png  used on input line 99.
+Package pdftex.def Info: assets/thesisinpictures.png  used on input line 112.
 (pdftex.def)             Requested size: 364.12666pt x 204.79716pt.
  [3
 
 ]
 File: assets/thesisinpictures.png Graphic file (type png)
 <use assets/thesisinpictures.png>
-Package pdftex.def Info: assets/thesisinpictures.png  used on input line 99.
+Package pdftex.def Info: assets/thesisinpictures.png  used on input line 112.
 (pdftex.def)             Requested size: 364.12666pt x 204.79716pt.
  [4
 
 ]
 File: assets/thesisinpictures.png Graphic file (type png)
 <use assets/thesisinpictures.png>
-Package pdftex.def Info: assets/thesisinpictures.png  used on input line 99.
+Package pdftex.def Info: assets/thesisinpictures.png  used on input line 112.
 (pdftex.def)             Requested size: 364.12666pt x 204.79716pt.
  [5
 
 ]
 File: assets/thesisinpictures.png Graphic file (type png)
 <use assets/thesisinpictures.png>
-Package pdftex.def Info: assets/thesisinpictures.png  used on input line 99.
+Package pdftex.def Info: assets/thesisinpictures.png  used on input line 112.
 (pdftex.def)             Requested size: 364.12666pt x 204.79716pt.
  [6
 
 ]
 File: assets/thesisinpictures.png Graphic file (type png)
 <use assets/thesisinpictures.png>
-Package pdftex.def Info: assets/thesisinpictures.png  used on input line 99.
+Package pdftex.def Info: assets/thesisinpictures.png  used on input line 112.
 (pdftex.def)             Requested size: 364.12666pt x 204.79716pt.
  [7
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 118.
  (S:\ProgrammierShit\MikTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 118.
  (S:\ProgrammierShit\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) detected at line 112
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
+Underfull \hbox (badness 10000) detected at line 118
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [8
 
 ]
-Underfull \hbox (badness 10000) detected at line 125
+Underfull \hbox (badness 10000) detected at line 126
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
@@ -882,13 +887,28 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [9
 
 ]
+Underfull \hbox (badness 10000) detected at line 133
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/looptypes.png, id=71, 2409.0pt x 762.59906pt>
+File: assets/looptypes.png Graphic file (type png)
+<use assets/looptypes.png>
+Package pdftex.def Info: assets/looptypes.png  used on input line 133.
+(pdftex.def)             Requested size: 307.26291pt x 97.2679pt.
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [10
 
-]
+ <./assets/looptypes.png>]
+File: assets/looptypes.png Graphic file (type png)
+<use assets/looptypes.png>
+Package pdftex.def Info: assets/looptypes.png  used on input line 133.
+(pdftex.def)             Requested size: 307.26291pt x 97.2679pt.
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -896,10 +916,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [11
 
 ]
-Underfull \hbox (badness 10000) detected at line 130
+Underfull \hbox (badness 10000) detected at line 151
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
+<assets/collage.png, id=82, 2032.59375pt x 1355.0625pt>
+File: assets/collage.png Graphic file (type png)
+<use assets/collage.png>
+Package pdftex.def Info: assets/collage.png  used on input line 151.
+(pdftex.def)             Requested size: 280.68433pt x 187.12288pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -907,11 +932,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [12
 
-]
-Underfull \hbox (badness 10000) detected at line 135
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
+ <./assets/collage.png>]
+<assets/bp_matrix_plot.png, id=88, 382.3083pt x 393.8715pt>
+File: assets/bp_matrix_plot.png Graphic file (type png)
+<use assets/bp_matrix_plot.png>
+Package pdftex.def Info: assets/bp_matrix_plot.png  used on input line 151.
+(pdftex.def)             Requested size: 150.57372pt x 155.12979pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -919,11 +945,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [13
 
-]
-Underfull \hbox (badness 10000) detected at line 139
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
+ <./assets/bp_matrix_plot.png>]
+File: assets/bp_matrix_plot.png Graphic file (type png)
+<use assets/bp_matrix_plot.png>
+Package pdftex.def Info: assets/bp_matrix_plot.png  used on input line 151.
+(pdftex.def)             Requested size: 150.57372pt x 155.12979pt.
+<assets/mcc.png, id=97, 508.90125pt x 372.64218pt>
+File: assets/mcc.png Graphic file (type png)
+<use assets/mcc.png>
+Package pdftex.def Info: assets/mcc.png  used on input line 151.
+(pdftex.def)             Requested size: 150.57372pt x 110.25827pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -931,11 +962,21 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [14
 
-]
-Underfull \hbox (badness 10000) detected at line 143
+ <./assets/mcc.png>]
+Underfull \hbox (badness 10000) detected at line 167
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
+<assets/real_feynman_from_lecture.png, id=104, 449.42906pt x 231.11343pt>
+File: assets/real_feynman_from_lecture.png Graphic file (type png)
+<use assets/real_feynman_from_lecture.png>
+Package pdftex.def Info: assets/real_feynman_from_lecture.png  used on input line 167.
+(pdftex.def)             Requested size: 150.57372pt x 77.43141pt.
+<assets/cnn_implmemetnaion_visualization.png, id=105, 1496.59125pt x 1058.95625pt>
+File: assets/cnn_implmemetnaion_visualization.png Graphic file (type png)
+<use assets/cnn_implmemetnaion_visualization.png>
+Package pdftex.def Info: assets/cnn_implmemetnaion_visualization.png  used on input line 167.
+(pdftex.def)             Requested size: 150.57372pt x 106.532pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -943,22 +984,21 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [15
 
-]
-Underfull \hbox (badness 10000) detected at line 147
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
+ <./assets/real_feynman_from_lecture.png> <./assets/cnn_implmemetnaion_visualization.png (PNG copy)>]
+Underfull \hbox (badness 10000) detected at line 170
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [16
 
 ]
-Underfull \hbox (badness 10000) detected at line 152
+Underfull \hbox (badness 10000) detected at line 181
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 181.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -968,16 +1008,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [17
 
 ]
-Underfull \hbox (badness 10000) detected at line 214
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Overfull \hbox (32.1285pt too wide) in paragraph at lines 214--214
- [][] 
- []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -985,11 +1015,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (26.40723pt too wide) in paragraph at lines 214--214
- [][] 
- []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -997,20 +1022,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [19
 
 ]
-Overfull \hbox (26.40723pt too wide) in paragraph at lines 214--214
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
+Underfull \hbox (badness 10000) detected at line 185
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [20
 
 ]
-Overfull \hbox (31.55975pt too wide) in paragraph at lines 214--214
- [][] 
+Underfull \hbox (badness 10000) detected at line 215
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
  []
 
 
@@ -1021,10 +1056,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [21
 
 ]
-Underfull \hbox (badness 10000) detected at line 233
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
  []
 
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+<assets/ffn_impl.png, id=145, 880.79062pt x 550.30594pt>
+File: assets/ffn_impl.png Graphic file (type png)
+<use assets/ffn_impl.png>
+Package pdftex.def Info: assets/ffn_impl.png  used on input line 215.
+(pdftex.def)             Requested size: 139.49132pt x 87.15227pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1032,11 +1082,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [22
 
-]
-Underfull \hbox (badness 10000) detected at line 249
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ <./assets/ffn_impl.png>]
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
  []
 
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+File: assets/cnn_implmemetnaion_visualization.png Graphic file (type png)
+<use assets/cnn_implmemetnaion_visualization.png>
+Package pdftex.def Info: assets/cnn_implmemetnaion_visualization.png  used on input line 215.
+(pdftex.def)             Requested size: 123.15517pt x 87.14198pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1045,44 +1109,54 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [23
 
 ]
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+
+Overfull \hbox (8.87819pt too wide) in paragraph at lines 215--215
+ []|[][][][][][]| 
+ []
+
+<assets/lstm_cell.png, id=157, 892.08281pt x 532.23843pt>
+File: assets/lstm_cell.png Graphic file (type png)
+<use assets/lstm_cell.png>
+Package pdftex.def Info: assets/lstm_cell.png  used on input line 215.
+(pdftex.def)             Requested size: 146.07112pt x 87.1496pt.
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [24
 
-]
-Underfull \hbox (badness 10000) detected at line 256
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-<assets/rq1_bpm_table.png, id=146, 880.79062pt x 1321.18594pt>
-File: assets/rq1_bpm_table.png Graphic file (type png)
-<use assets/rq1_bpm_table.png>
-Package pdftex.def Info: assets/rq1_bpm_table.png  used on input line 256.
-(pdftex.def)             Requested size: 124.7479pt x 187.12186pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
+ <./assets/lstm_cell.png>]
+Underfull \hbox (badness 10000) detected at line 219
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [25
 
- <./assets/rq1_bpm_table.png (PNG copy)>]
-Underfull \hbox (badness 10000) detected at line 273
+]
+Underfull \hbox (badness 10000) detected at line 332
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-<assets/rq1_metrics_200.png, id=153, 925.95938pt x 1196.97188pt>
-File: assets/rq1_metrics_200.png Graphic file (type png)
-<use assets/rq1_metrics_200.png>
-Package pdftex.def Info: assets/rq1_metrics_200.png  used on input line 273.
-(pdftex.def)             Requested size: 150.57372pt x 194.64261pt.
-<assets/rq1_metrics_50000.png, id=154, 925.95938pt x 1196.97188pt>
-File: assets/rq1_metrics_50000.png Graphic file (type png)
-<use assets/rq1_metrics_50000.png>
-Package pdftex.def Info: assets/rq1_metrics_50000.png  used on input line 273.
-(pdftex.def)             Requested size: 150.57372pt x 194.64261pt.
+<assets/datagenconfig.png, id=170, 321.45094pt x 155.83218pt>
+File: assets/datagenconfig.png Graphic file (type png)
+<use assets/datagenconfig.png>
+Package pdftex.def Info: assets/datagenconfig.png  used on input line 332.
+(pdftex.def)             Requested size: 122.2409pt x 59.25964pt.
+<assets/dataexample.png, id=171, 1007.26312pt x 575.90157pt>
+File: assets/dataexample.png Graphic file (type png)
+<use assets/dataexample.png>
+Package pdftex.def Info: assets/dataexample.png  used on input line 332.
+(pdftex.def)             Requested size: 122.23425pt x 69.88728pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1090,11 +1164,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [26
 
- <./assets/rq1_metrics_200.png (PNG copy)> <./assets/rq1_metrics_50000.png (PNG copy)>]
-Underfull \hbox (badness 10000) detected at line 286
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
+ <./assets/datagenconfig.png> <./assets/dataexample.png>]
+<assets/ffnhyperparamspace.png, id=180, 1068.99374pt x 411.03563pt>
+File: assets/ffnhyperparamspace.png Graphic file (type png)
+<use assets/ffnhyperparamspace.png>
+Package pdftex.def Info: assets/ffnhyperparamspace.png  used on input line 332.
+(pdftex.def)             Requested size: 122.23845pt x 47.00154pt.
+<assets/optimizationresults.png, id=181, 1039.63406pt x 464.4853pt>
+File: assets/optimizationresults.png Graphic file (type png)
+<use assets/optimizationresults.png>
+Package pdftex.def Info: assets/optimizationresults.png  used on input line 332.
+(pdftex.def)             Requested size: 122.2284pt x 54.60892pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1102,16 +1182,10 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [27
 
-]
-Underfull \hbox (badness 10000) detected at line 305
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ <./assets/ffnhyperparamspace.png> <./assets/optimizationresults.png>]
+Overfull \vbox (17.16022pt too high) detected at line 332
  []
 
-<assets/rq2_avg_structures.png, id=166, 662.475pt x 1776.6375pt>
-File: assets/rq2_avg_structures.png Graphic file (type png)
-<use assets/rq2_avg_structures.png>
-Package pdftex.def Info: assets/rq2_avg_structures.png  used on input line 305.
-(pdftex.def)             Requested size: 74.55049pt x 199.9472pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1119,43 +1193,33 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [28
 
- <./assets/rq2_avg_structures.png (PNG copy)>]
-Underfull \hbox (badness 10000) detected at line 312
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-<assets/rq2_bp_gc_tables.png, id=173, 1264.725pt x 1294.8375pt>
-File: assets/rq2_bp_gc_tables.png Graphic file (type png)
-<use assets/rq2_bp_gc_tables.png>
-Package pdftex.def Info: assets/rq2_bp_gc_tables.png  used on input line 312.
-(pdftex.def)             Requested size: 190.27951pt x 194.80997pt.
-
+]
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [29
 
- <./assets/rq2_bp_gc_tables.png (PNG copy)>]
-Underfull \hbox (badness 10000) detected at line 319
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-<assets/rq2_hl_multi_tables.png, id=179, 1174.3875pt x 1385.175pt>
-File: assets/rq2_hl_multi_tables.png Graphic file (type png)
-<use assets/rq2_hl_multi_tables.png>
-Package pdftex.def Info: assets/rq2_hl_multi_tables.png  used on input line 319.
-(pdftex.def)             Requested size: 165.16576pt x 194.81088pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
+]
+Underfull \hbox (badness 10000) detected at line 336
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 [30
 
- <./assets/rq2_hl_multi_tables.png (PNG copy)>]
-Underfull \hbox (badness 10000) detected at line 332
+]
+Underfull \hbox (badness 10000) detected at line 343
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/rq1mcc.png, id=205, 1017.8025pt x 240.14719pt>
+File: assets/rq1mcc.png Graphic file (type png)
+<use assets/rq1mcc.png>
+Package pdftex.def Info: assets/rq1mcc.png  used on input line 343.
+(pdftex.def)             Requested size: 651.1895pt x 153.64493pt.
+
+Overfull \hbox (343.89963pt too wide) in paragraph at lines 343--343
+ [][] 
  []
 
 
@@ -1165,9 +1229,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [31
 
-]
-Underfull \hbox (badness 10000) detected at line 351
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ <./assets/rq1mcc.png>]
+File: assets/rq1mcc.png Graphic file (type png)
+<use assets/rq1mcc.png>
+Package pdftex.def Info: assets/rq1mcc.png  used on input line 343.
+(pdftex.def)             Requested size: 651.1895pt x 153.64493pt.
+
+Overfull \hbox (343.89963pt too wide) in paragraph at lines 343--343
+ [][] 
  []
 
 
@@ -1178,10 +1247,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [32
 
 ]
-Underfull \hbox (badness 10000) detected at line 376
+Underfull \hbox (badness 10000) detected at line 353
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
+<assets/rq1results.png, id=218, 491.58656pt x 648.92438pt>
+File: assets/rq1results.png Graphic file (type png)
+<use assets/rq1results.png>
+Package pdftex.def Info: assets/rq1results.png  used on input line 353.
+(pdftex.def)             Requested size: 151.46764pt x 199.9472pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1189,16 +1263,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [33
 
-]
-Underfull \hbox (badness 10000) detected at line 388
+ <./assets/rq1results.png>]
+Underfull \hbox (badness 10000) detected at line 362
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-<assets/rna_ensemble.png, id=201, 1185.67969pt x 575.90157pt>
-File: assets/rna_ensemble.png Graphic file (type png)
-<use assets/rna_ensemble.png>
-Package pdftex.def Info: assets/rna_ensemble.png  used on input line 388.
-(pdftex.def)             Requested size: 196.66533pt x 95.52054pt.
+<assets/avgpicture.png, id=225, 628.59843pt x 574.39594pt>
+File: assets/avgpicture.png Graphic file (type png)
+<use assets/avgpicture.png>
+Package pdftex.def Info: assets/avgpicture.png  used on input line 362.
+(pdftex.def)             Requested size: 218.81378pt x 199.9472pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -1206,7 +1280,136 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [34
 
+ <./assets/avgpicture.png>]
+Underfull \hbox (badness 10000) detected at line 371
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/rq1rnametrics.png, id=232, 646.66594pt x 662.475pt>
+File: assets/rq1rnametrics.png Graphic file (type png)
+<use assets/rq1rnametrics.png>
+Package pdftex.def Info: assets/rq1rnametrics.png  used on input line 371.
+(pdftex.def)             Requested size: 195.17548pt x 199.9472pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[35
+
+ <./assets/rq1rnametrics.png>]
+Underfull \hbox (badness 10000) detected at line 384
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[36
+
+]
+Underfull \hbox (badness 10000) detected at line 403
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/rq2_avg_structures.png, id=244, 662.475pt x 1776.6375pt>
+File: assets/rq2_avg_structures.png Graphic file (type png)
+<use assets/rq2_avg_structures.png>
+Package pdftex.def Info: assets/rq2_avg_structures.png  used on input line 403.
+(pdftex.def)             Requested size: 74.55049pt x 199.9472pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[37
+
+ <./assets/rq2_avg_structures.png (PNG copy)>]
+Underfull \hbox (badness 10000) detected at line 410
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/rq2_bp_gc_tables.png, id=251, 1157.82562pt x 989.94844pt>
+File: assets/rq2_bp_gc_tables.png Graphic file (type png)
+<use assets/rq2_bp_gc_tables.png>
+Package pdftex.def Info: assets/rq2_bp_gc_tables.png  used on input line 410.
+(pdftex.def)             Requested size: 227.85095pt x 194.81404pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[38
+
+ <./assets/rq2_bp_gc_tables.png>]
+Underfull \hbox (badness 10000) detected at line 417
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/rq2hlandml.png, id=258, 514.17094pt x 646.66594pt>
+File: assets/rq2hlandml.png Graphic file (type png)
+<use assets/rq2hlandml.png>
+Package pdftex.def Info: assets/rq2hlandml.png  used on input line 417.
+(pdftex.def)             Requested size: 154.90366pt x 194.82025pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[39
+
+ <./assets/rq2hlandml.png>]
+Underfull \hbox (badness 10000) detected at line 422
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+<assets/rq2biascomparison.png, id=265, 877.77937pt x 545.78906pt>
+File: assets/rq2biascomparison.png Graphic file (type png)
+<use assets/rq2biascomparison.png>
+Package pdftex.def Info: assets/rq2biascomparison.png  used on input line 422.
+(pdftex.def)             Requested size: 264.2734pt x 164.32094pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[40
+
+ <./assets/rq2biascomparison.png>]
+Underfull \hbox (badness 10000) detected at line 435
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+[41
+
+] [42
+
+] [43
+
+]
+<assets/rna_ensemble.png, id=288, 1185.67969pt x 575.90157pt>
+File: assets/rna_ensemble.png Graphic file (type png)
+<use assets/rna_ensemble.png>
+Package pdftex.def Info: assets/rna_ensemble.png  used on input line 492.
+(pdftex.def)             Requested size: 196.66533pt x 95.52054pt.
+ [44
+
  <./assets/rna_ensemble.png>]
+<assets/diagram.png, id=295, 752.8125pt x 752.8125pt>
+File: assets/diagram.png Graphic file (type png)
+<use assets/diagram.png>
+Package pdftex.def Info: assets/diagram.png  used on input line 497.
+(pdftex.def)             Requested size: 196.47328pt x 196.47328pt.
+ [45
+
+ <./assets/diagram.png>]
 \tf@nav=\write6
 \openout6 = `defense_slides_with_overview_nav.nav'.
 
@@ -1221,21 +1424,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `defense_slides_with_overview_nav.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26395 strings out of 474823
- 516141 string characters out of 5759866
- 1931043 words of memory out of 5000000
- 47753 multiletter control sequences out of 15000+600000
- 571113 words of font info for 86 fonts, out of 8000000 for 9000
+ 26592 strings out of 474823
+ 520844 string characters out of 5759866
+ 1935043 words of memory out of 5000000
+ 47926 multiletter control sequences out of 15000+600000
+ 572236 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,123p,564b,876s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on defense_slides_with_overview_nav.pdf (34 pages, 31500807 bytes).
+ 128i,14n,123p,564b,874s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss17.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><S:/ProgrammierShit/MikTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on defense_slides_with_overview_nav.pdf (45 pages, 36570407 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 367 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
