@@ -268,7 +268,7 @@
           \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{optimizationresults.png}
         \end{minipage}
 
-        \vspace{0.35em}
+        \vspace{1.35em}
         Search hyperparameter space, to:
         \begin{enumerate}
           \item give each architecture its preferred non-architectural parameters
@@ -281,6 +281,7 @@
         \centering
         \begin{minipage}{0.47\textwidth}
           \centering
+          \vspace{0.35em}
           \textbf{Loss function}
           \begin{enumerate}
             \item independant predictions for each position
@@ -320,8 +321,8 @@
         \vspace{0.35em}
         \begin{itemize}
           \item Test on an independent validation dataset
-          \item report MCC
-          \item report RNA-specific metrics: symmetry, sparsity, non-canonical ratio, min loop
+          \item report \textbf{MCC}
+          \item report \textbf{RNA-specific metrics}: symmetry, sparsity, non-canonical ratio, min loop
                 length
         \end{itemize}
       \end{minipage}
@@ -334,10 +335,10 @@
 % -----------------------------------------------------------------------------
 \setchapternav{5}
 \chaptertitleslide{\chapterfive}
-\begin{frame}{RQ1: MCC and generalization gap}
+\begin{frame}{RQ1: MCC}
   \vfill
   \centering
-  \includegraphics[height=0.5\textwidth,keepaspectratio]{rq1mcc.png}\\[3pt]
+  \includegraphics[height=0.25\textwidth,keepaspectratio]{rq1mcc.png}\\[3pt]
   \vfill
   \only<2->{\takehome{CNN works early; BLSTM needs roughly 5,000; FFN stays near zero.}}
 \end{frame}
