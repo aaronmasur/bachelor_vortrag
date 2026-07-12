@@ -6,6 +6,7 @@
 \usepackage{makecell}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \usepackage[absolute,overlay]{textpos}
 %\usepackage{pgfpages}
 
@@ -118,12 +119,89 @@
 \chaptertitleslide{\chapterone}
 
 % -----------------------------------------------------------------------------
-%\begin{frame}{What is RNA? What does it do?}
-%  warum gucke ich mir das überhaupt an.
-%  warum ist RNA interessant?
-%  warum ML?
-%  Warum impact der modelle messen?
-%\end{frame}
+\begin{frame}{What is RNA? What does it do?}
+\vfill
+
+\begin{minipage}{0.46\textwidth}
+\centering
+
+\begin{tikzpicture}[
+  nucleotide/.style={
+    circle,
+    draw,
+    thick,
+    minimum size=8mm,
+    inner sep=0pt,
+    font=\bfseries
+  }
+]
+
+\draw[thick] (0,0) -- (4.2,0);
+
+\node[nucleotide,fill=green!20]  at (0.3,0) {A};
+\node[nucleotide,fill=blue!20]   at (1.5,0) {C};
+\node[nucleotide,fill=orange!25] at (2.7,0) {G};
+\node[nucleotide,fill=red!20]    at (3.9,0) {U};
+
+\node[font=\footnotesize] at (2.1,-0.75)
+  {\textbf{RNA sequence}};
+
+\node[align=center,text width=4.4cm,font=\footnotesize]
+  at (2.1,-1.55)
+  {RNA consists of a sequence of four\\
+   nucleotides: \textbf{A, C, G, U}.};
+
+\end{tikzpicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.46\textwidth}
+\centering
+
+\begin{tikzpicture}[
+  function/.style={
+    draw,
+    rounded corners,
+    fill=blue!10,
+    minimum width=3.8cm,
+    minimum height=9mm,
+    align=left,
+    font=\footnotesize
+  },
+  symbol/.style={
+    circle,
+    draw,
+    fill=white,
+    minimum size=6mm,
+    inner sep=0pt,
+    font=\scriptsize\bfseries
+  }
+]
+
+\node[function] at (0,1.45)
+  {\hspace{8mm}\textbf{Gene regulation}};
+\node[symbol] at (-1.45,1.45) {\(0/1\)};
+
+\node[function] at (0,0.35)
+  {\hspace{8mm}\textbf{Catalytic activity}};
+\node[symbol] at (-1.45,0.35) {\(\ast\)};
+
+\node at (0,-0.45) {\Large\(\vdots\)};
+
+\node[function] at (0,-1.4)
+  {\hspace{8mm}\textbf{Antiviral immunity}};
+\node[symbol] at (-1.45,-1.4) {\(\times\)};
+
+\node[font=\footnotesize,align=center,text width=4.2cm]
+  at (0,-2.4)
+  {Examples of the many functions of RNA};
+
+\end{tikzpicture}
+
+\end{minipage}
+
+\vfill
+\end{frame}
 
 % -----------------------------------------------------------------------------
 \begin{frame}{Folding RNA: secondary structure motifs}
