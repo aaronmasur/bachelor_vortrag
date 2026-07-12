@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage[absolute,overlay]{textpos}
-\usepackage{pgfpages}
+%\usepackage{pgfpages}
 
 \graphicspath{{assets/}}
 \setbeamertemplate{navigation symbols}{}
@@ -118,22 +118,22 @@
 \chaptertitleslide{\chapterone}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{What is RNA? What does it do?}
-  warum gucke ich mir das überhaupt an.
-  warum ist RNA interessant?
-  warum ML?
-  Warum impact der modelle messen?
-\end{frame}
+%\begin{frame}{What is RNA? What does it do?}
+%  warum gucke ich mir das überhaupt an.
+%  warum ist RNA interessant?
+%  warum ML?
+%  Warum impact der modelle messen?
+%\end{frame}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{Folding RNA: motifs}
+\begin{frame}{Folding RNA: secondary structure motifs}
   \centering
   \visible<1->{\textbf{form defines function}\par\vspace{0.75em}}
   \visible<2->{\includegraphics[width=1\textwidth,height=0.73\textheight,keepaspectratio]{looptypes.png}}
 \end{frame}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{Folding RNA: representations}
+\begin{frame}{Folding RNA: secondary structure representations}
   \centering
   \only<1>{\includegraphics[width=1\textwidth,height=0.73\textheight,keepaspectratio]{collage.png}}
   \vfill
@@ -232,10 +232,11 @@
 
     \only<1>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.18cm,yshift=-0.12cm]d.south west) rectangle ([xshift=0.18cm,yshift=0.12cm]d.north east);}
     \only<2>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.20cm,yshift=-0.12cm]o.south west) rectangle ([xshift=0.20cm,yshift=0.12cm]o.north east);}
-    \only<3>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]t.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]t.north east);}
-    \only<4>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]e.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]e.north east);}
+    \only<3>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.20cm,yshift=-0.12cm]o.south west) rectangle ([xshift=0.20cm,yshift=0.12cm]o.north east);}
+    \only<4>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]t.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]t.north east);}
+    \only<5>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]e.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]e.north east);}
   \end{tikzpicture}
-  \vspace{0.30em}
+  \vspace{0.40em}
   \begin{overlayarea}{0.92\textwidth}{5.15cm}
     \only<1>{
       \begin{minipage}{0.92\textwidth}
@@ -261,11 +262,11 @@
         \centering
         \begin{minipage}{0.47\textwidth}
           \centering
-          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{ffnhyperparamspace.png}
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{cnnsearchspace.png}
         \end{minipage}\hfill
         \begin{minipage}{0.47\textwidth}
           \centering
-          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{optimizationresults.png}
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{cnnoptimized.png}
         \end{minipage}
 
         \vspace{1.35em}
@@ -279,52 +280,49 @@
     \only<3>{
       \begin{minipage}{0.92\textwidth}
         \centering
-        \begin{minipage}{0.47\textwidth}
-          \centering
-          \vspace{0.35em}
-          \textbf{Loss function}
-          \begin{enumerate}
-            \item independant predictions for each position
-            \item class imbalance
-          \end{enumerate}
-          $\Rightarrow$ BCEwithlogitsloss
-        \end{minipage}\hfill
-        \begin{minipage}{0.47\textwidth}
-          \centering
-          \textbf{Optimizer}
-          \begin{enumerate}
-            \item deal sharp gradient spikes (due to FN and high \texttt{wpc})
-            \item no weight decay
-          \end{enumerate}
-          $\Rightarrow$ Adam
-        \end{minipage}
+        \includegraphics[width=0.92\textwidth,height=4.8cm,keepaspectratio]{optimizationresults.png}
       \end{minipage}
-      \vspace{1.5em}
-      \begin{itemize}
-        \item Final Result: Training run + \textbf{Model parameters}
-        \item Training loop metrics calculated through binarized prediction matrix
-        \item Threshold was independently optimized by each model
-      \end{itemize}
     }
     \only<4>{
       \begin{minipage}{0.92\textwidth}
         \centering
-        \begin{minipage}{0.47\textwidth}
+        \begin{minipage}[c]{0.57\textwidth}
           \centering
-          %\includegraphics[width=\linewidth,height=1.45cm,keepaspectratio]{rq1_bpm_table.png}
+          \includegraphics[width=\linewidth,height=1.75cm,keepaspectratio]{cnnoptimized.png}\\[0.55em]
+          \includegraphics[width=\linewidth,height=1.75cm,keepaspectratio]{dataexample.png}
+          \begin{itemize}
+            \item Input: Optimized model \& training dataset.
+          \end{itemize}
         \end{minipage}\hfill
-        \begin{minipage}{0.47\textwidth}
+        \begin{minipage}[c][4.05cm][c]{0.37\textwidth}
           \centering
-          %\includegraphics[width=\linewidth,height=1.45cm,keepaspectratio]{rq2_bp_gc_tables.png}
+          \includegraphics[width=\linewidth,height=4.9cm,keepaspectratio]{pthfile.png}
+          \begin{itemize}
+            \item Output: model weights.
+          \end{itemize}
         \end{minipage}
 
-        \vspace{0.35em}
-        \begin{itemize}
-          \item Test on an independent validation dataset
-          \item report \textbf{MCC}
-          \item report \textbf{RNA-specific metrics}: symmetry, sparsity, non-canonical ratio, min loop
-                length
-        \end{itemize}
+      \end{minipage}
+
+    }
+    \only<5>{
+      \begin{minipage}{0.92\textwidth}
+        \centering
+        \begin{minipage}[c]{0.57\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=1.75cm,keepaspectratio]{pthfile.png}\\[0.55em]
+          \includegraphics[width=\linewidth,height=1.75cm,keepaspectratio]{dataexample.png}
+          \begin{itemize}
+            \item Input: Trained model \& evaluation dataset.
+          \end{itemize}
+        \end{minipage}\hfill
+        \begin{minipage}[c][4.05cm][c]{0.37\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4.9cm,keepaspectratio]{rq1mcc.png}
+          \begin{itemize}
+            \item Output: MCC (\& RNA specific metrics).
+          \end{itemize}
+        \end{minipage}
       \end{minipage}
     }
   \end{overlayarea}
@@ -335,12 +333,21 @@
 % -----------------------------------------------------------------------------
 \setchapternav{5}
 \chaptertitleslide{\chapterfive}
+
+%---------------------------
+\begin{frame}
+  \centering
+  \textbf{RQ1:}  \textit{How much data is necessary for various machine learning
+    architectures to perform sufficiently well?}
+\end{frame}
+%----------------------------
+
 \begin{frame}{RQ1: MCC}
   \vfill
   \centering
   \includegraphics[height=0.25\textwidth,keepaspectratio]{rq1mcc.png}\\[3pt]
   \vfill
-  \only<2->{\takehome{CNN works early; BLSTM needs roughly 5,000; FFN stays near zero.}}
+  \only<2->{\takehome{FFN stays near zero; CNN works early; BLSTM needs roughly 5,000. }}
 \end{frame}
 
 % -----------------------------------------------------------------------------
@@ -372,11 +379,38 @@
 \end{frame}
 
 % -----------------------------------------------------------------------------
+\begin{frame}{CNN overfits}
+  \vfill
+  \centering
+  \begin{minipage}[c]{0.58\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=2.02cm,keepaspectratio]{cnn_train_loss.png}\\[0.35em]
+    \begin{itemize}
+      \item Training loss.
+    \end{itemize}
+    \includegraphics[width=\linewidth,height=2.02cm,keepaspectratio]{cnn_validation_loss.png}
+    \begin{itemize}
+      \item  Validation loss.
+    \end{itemize}
+    \vspace{-0.1em}
+
+  \end{minipage}\hfill
+  \begin{minipage}[c][4.55cm][c]{0.38\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,height=5.15cm,keepaspectratio]{gengap.png}
+    \begin{itemize}
+      \item Generalization Gap
+    \end{itemize}
+  \end{minipage}
+  \vfill
+\end{frame}
+
+% -----------------------------------------------------------------------------
 \begin{frame}{RQ1 interpretation by architecture}
   \vfill
   \begin{tabularx}{\textwidth}{@{}>{\bfseries}l X@{}}
     FFN   & learned an average base-pair distribution, not a sequence-specific folding rule                                                                   \\[0.9em]
-    CNN   & strong with little data, good local constraints, but clear overfitting                                                                            \\[0.9em]
+    CNN   & strong with little data, good local constraints but overfits                                                                                      \\[0.9em]
     BLSTM & no useful predictions for 200/1,000; starts around 5,000; weak on minimum loop length; strong performance regarding 10x fewer parameters than CNN \\
   \end{tabularx}
   \vfill
@@ -384,7 +418,13 @@
   \note{This slide maps observations to the architectural hypotheses: FFN has no locality or sequence prior. CNN has local kernels, so it is strong on local motifs and constraints. BLSTM has sequence context and lower parameter count, so it generalizes differently, but it is not naturally forced to respect local matrix constraints.}
 \end{frame}
 
-% -----------------------------------------------------------------------------
+%---------------------------
+\begin{frame}
+  \centering
+  \textbf{RQ2:}  \textit{How do machine learning architectures perform on distinct
+    biased data sets?}
+\end{frame}
+%----------------------------
 \begin{frame}{RQ2 setup: biased datasets}
   \begin{minipage}{0.43\textwidth}
     \centering
@@ -481,10 +521,10 @@
 \end{frame}
 
 % -----------------------------------------------------------------------------
-\begin{frame}{Danke für die Aufmerksamkeit!}
+\begin{frame}{Danke für eure Aufmerksamkeit!}
   \begin{center}
     \vfill
-    \Huge Questions?
+    \Huge Fragen?
     \vfill
     \includegraphics[width=0.64\textwidth,keepaspectratio]{rna_ensemble.png}
     \vfill
@@ -492,10 +532,131 @@
   \note{End relaxed. If asked about limitations, answer honestly: synthetic labels, fixed length, no regularization, limited architectures, and MCC limitations. Then explain why each was chosen.}
 \end{frame}
 % -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------
 \begin{frame}{Repo visualization}
   \centering
   \includegraphics[width=0.82\textwidth,height=0.73\textheight,keepaspectratio]{diagram.png}
 \end{frame}
+%-----------------------------------------------------------------------------
+\begin{frame}{A pipeline from data to evaluation}
+  \centering
+  \vspace{0.25em}
+  \begin{tikzpicture}[node distance=1.0cm, >=stealth, thick]
+    \tikzstyle{box}=[draw=black!65, fill=blue!5, rounded corners=4pt, minimum width=1.75cm, minimum height=0.9cm, align=center]
+    \node[box] (d) {data\\generation};
+    \node[box, right of=d, xshift=1.5cm] (o) {model\\optimization};
+    \node[box, right of=o, xshift=1.5cm] (t) {training};
+    \node[box, right of=t, xshift=1.25cm] (e) {evaluation};
+    \draw[->] (d) -- (o);
+    \draw[->] (o) -- (t);
+    \draw[->] (t) -- (e);
 
+    \only<1>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.18cm,yshift=-0.12cm]d.south west) rectangle ([xshift=0.18cm,yshift=0.12cm]d.north east);}
+    \only<2>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.20cm,yshift=-0.12cm]o.south west) rectangle ([xshift=0.20cm,yshift=0.12cm]o.north east);}
+    \only<3>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]t.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]t.north east);}
+    \only<4>{\draw[red, very thick, rounded corners=6pt] ([xshift=-0.16cm,yshift=-0.12cm]e.south west) rectangle ([xshift=0.16cm,yshift=0.12cm]e.north east);}
+  \end{tikzpicture}
+  \vspace{0.30em}
+  \begin{overlayarea}{0.92\textwidth}{5.15cm}
+    \only<1>{
+      \begin{minipage}{0.92\textwidth}
+        \centering
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{datagenconfig.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{dataexample.png}
+        \end{minipage}
+
+        \vspace{0.35em}
+        \begin{itemize}
+          \item sample synthetic RNA sequences
+          \item label with RNAfold-derived secondary structures
+        \end{itemize}
+      \end{minipage}
+    }
+    \only<2>{
+      \begin{minipage}{0.92\textwidth}
+        \centering
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{ffnhyperparamspace.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \includegraphics[width=\linewidth,height=4cm,keepaspectratio]{optimizationresults.png}
+        \end{minipage}
+
+        \vspace{1.35em}
+        Search hyperparameter space, to:
+        \begin{enumerate}
+          \item give each architecture its preferred non-architectural parameters
+          \item obtain comparable representatives of the architectures
+        \end{enumerate}
+      \end{minipage}
+    }
+    \only<3>{
+      \begin{minipage}{0.92\textwidth}
+        \centering
+        \includegraphics[width=0.92\textwidth,height=4.8cm,keepaspectratio]{optimizationresults.png}
+      \end{minipage}
+    }
+    \only<4>{
+      \begin{minipage}{0.92\textwidth}
+        \centering
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \vspace{0.35em}
+          \textbf{Loss function}
+          \begin{enumerate}
+            \item independant predictions for each position
+            \item class imbalance
+          \end{enumerate}
+          $\Rightarrow$ BCEwithlogitsloss
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          \textbf{Optimizer}
+          \begin{enumerate}
+            \item deal sharp gradient spikes (due to FN and high \texttt{wpc})
+            \item no weight decay
+          \end{enumerate}
+          $\Rightarrow$ Adam
+        \end{minipage}
+      \end{minipage}
+      \vspace{1.5em}
+      \begin{itemize}
+        \item Final Result: Training run + \textbf{Model parameters}
+        \item Training loop metrics calculated through binarized prediction matrix
+        \item Threshold was independently optimized by each model
+      \end{itemize}
+    }
+    \only<5>{
+      \begin{minipage}{0.92\textwidth}
+        \centering
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          %\includegraphics[width=\linewidth,height=1.45cm,keepaspectratio]{rq1_bpm_table.png}
+        \end{minipage}\hfill
+        \begin{minipage}{0.47\textwidth}
+          \centering
+          %\includegraphics[width=\linewidth,height=1.45cm,keepaspectratio]{rq2_bp_gc_tables.png}
+        \end{minipage}
+
+        \vspace{0.35em}
+        \begin{itemize}
+          \item Test on an independent validation dataset
+          \item report \textbf{MCC}
+          \item report \textbf{RNA-specific metrics}: symmetry, sparsity, non-canonical ratio,
+                min loop length
+        \end{itemize}
+      \end{minipage}
+    }
+  \end{overlayarea}
+  \vfill
+  \note{Walk through this slowly. Data generation: synthetic sequence and RNAfold label. Optimization: tune architecture and non-architecture hyperparameters such as threshold and positive class weight. Training: BCEWithLogitsLoss plus Adam, early stopping on validation MCC. Evaluation: independent test set, MCC and RNA-specific metrics.}
+\end{frame}
 % -----------------------------------------------------------------------------
 \end{document}
